@@ -1,0 +1,231 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.title{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    padding-bottom: 1rem;
+    width: 100%;
+
+}
+
+header .fa-solid{
+    padding-left: 1rem;
+}
+
+header .h1{
+    font-family: 'Shrikhand', cursive;
+}
+
+/* .image{
+    top: -10px;
+    position: relative;
+} */
+
+.image img{
+    max-width: 100%;
+}
+
+
+main{
+    top: -62px;
+    position: relative;
+    background-color: #f7f7f7;
+    display: flex;
+    flex-direction: column;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+    border-radius: 30px 30px 0px 0px;
+}
+
+main h2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 1rem;
+    font-family: 'Shrikhand', cursive;
+    font-style: oblique;
+    margin-bottom: 2rem;
+    font-weight: bold;
+    font-weight: 700;
+}
+
+.food-menu{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3rem;
+}
+
+.food-menu h3{
+    color: #8b8b8b;
+    border-bottom: #99e2d0 solid ;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    width: 50px;
+    padding-bottom: 5px;
+    font-weight: 400;
+}
+
+.grid{
+    display:flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+.card{
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: white;
+    box-shadow: 1px 5px  10px rgba(0, 0, 0, 0.10);
+    display: flex;
+    cursor: pointer;
+    column-gap: 5px;
+    justify-content: space-between
+}
+
+.text-menu-description{
+    padding: 0.7rem; 
+    overflow: hidden;
+    width: 80%;
+}
+
+.plat{
+    font-weight: 300;
+    white-space: nowrap; 
+}
+
+.prix {
+    display: flex; 
+    align-items: end;
+    padding: 0.7rem;
+}
+
+
+.card:hover >.text-menu-description .plat{
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+/* animation */
+.card>.animation{
+    background-color: #99e2d0;
+    overflow: hidden;
+    width: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 500ms linear;
+}
+
+.card:hover>.animation{
+    width: 20%;
+    margin-left: 0px;
+}
+
+
+/* roatation */
+.card>.animation> .fa-solid {
+    font-size: 25px;
+    color: white;
+    animation-name: rotation-out;
+    animation-duration: 300ms;
+    animation-timing-function: linear;
+    animation-iteration-count: 2;
+}
+
+
+.card:hover>.animation> .fa-solid {
+    animation-name: rotation-in;
+    animation-duration: 300ms;
+    animation-timing-function: linear;
+    animation-iteration-count: 2;
+}
+
+@keyframes rotation-in{
+    0%{transform: rotate(0deg) ;}
+    100%{transform: rotate(-1turn) ;}
+}
+
+@keyframes rotation-out{
+    from{transform: rotate(-1turn) ;}
+    to{transform: rotate(0deg) ;}
+}
+
+
+/* Button */
+.button{
+    display: flex;
+    justify-content: center;
+}
+
+button{
+    font-size: large;
+    width: 200px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-radius: 30px;
+    color: white;
+    background: rgb(166,92,220);
+    background: linear-gradient(90deg, rgba(166,92,220,1) #a65cdc%, rgba(9,9,121,1) 35%, rgba(231,114,219,1) 100%); 
+ 
+    /* background-color: #ad5edb; */
+    border: none;
+    box-shadow: 1px 5px  10px rgba(0, 0, 0, 0.20);
+    
+    /* faire un degrader de couleur */
+}
+
+
+/* footer */
+
+footer{
+    background: #353535;
+    padding-top: 2rem;
+    padding-left: 2rem;
+}
+
+footer h2{
+    font-family: 'Shrikhand', cursive;
+    padding-bottom: 1rem;
+    font-size: 20px;
+    color: white;
+    /* italic */
+}
+
+footer ul{
+    list-style: none;
+}
+
+footer a{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: white;
+    text-decoration: none;
+    display:flex;
+    column-gap: 15px;
+    padding-bottom: 0.4rem;
+    
+}
+
+footer .fa-solid{
+    color: white;
+    width: 18px;
+}

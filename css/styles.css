@@ -1,0 +1,243 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+
+header h1{
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-family: 'Shrikhand', cursive;
+}
+
+.location{
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background: rgba(234,234,234,255);
+    box-shadow: inset 1px 5px  10px rgba(0, 0, 0, 0.10);
+}
+
+.location p {
+    padding-left: 2rem;
+}
+.block-description{
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(247,247,247,255);
+}
+
+.block-description >h2{
+    padding-bottom: 1rem;
+}
+.block-description >p{
+    padding-bottom: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    font-weight: 300;
+    color: #707070;
+    text-align: center;
+}
+.block-description> button{
+    border-radius: 25px 25px 25px 25px;
+    padding: 1rem 2rem;
+    color: white;
+    font-weight: 400;
+    background-color: #9356DC;
+    border: none;
+}
+
+.block-fonctionnement{
+    margin-left: 2rem;
+    margin-right: 2rem;
+    padding-top: 3rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.block-fonctionnement >h2{
+    margin-bottom: 1rem;
+}
+
+.block-boutton{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    column-gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+.block-boutton form{
+    width: inherit;
+}
+
+.block-boutton form>i{
+    background-color: #9356DC;
+    border-radius: 50%;
+    color: white;
+    font-size: 16px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+    top: 3.7rem;
+    right: 1rem;
+}
+
+.fa,
+.fa-solid {
+    color: grey;
+    font-size: 20px ;
+}
+
+
+form>button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 1.8rem 2rem;
+    background: rgba(247,247,247,255);
+    border-radius: 25px 25px 25px 25px;
+    border: none;
+    width: inherit;
+    box-shadow: 1px 5px  10px rgba(0, 0, 0, 0.10);
+}
+
+button>p{
+    padding-left: 1rem;
+    font-weight: 600;
+}
+
+form:hover>button{
+    background-color: rgb(147, 86, 220, 0.2);
+}
+form:hover>button>i{
+    color: #9356DC;
+}
+
+
+.block-restaurant{
+    background: rgba(247,247,247,255);
+    padding-top: 4rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 4rem;
+}
+
+.block-restaurant h2{
+    /* margin-left: 2rem;
+    margin-right: 2rem; */
+    padding-bottom: 2rem;
+}
+
+
+.grid{
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+}
+
+.grid-card-restaurants{
+    border-radius: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.tag-nouveau{
+    color: #169475;
+    background-color: rgba(153,226,208,255);
+    display: flex;
+    width: 6rem;
+    padding: 3px;
+    justify-content: center;
+    position: relative;
+    top: 40px;
+    left: 65%;
+    
+}
+
+.card-image{
+    overflow: hidden;
+    max-width: 640px;
+    max-height: 200px;
+    width: 100%;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.card-image> img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 1rem;
+    padding-top: 1em;
+    padding-bottom: 1rem;
+    padding-right: 1rem;
+    background: white;
+    border-radius: 0px 0px 20px 20px;
+}
+
+.container>.fa-regular{
+    font-size: 20px;
+}
+
+.container> .fa:hover{
+    color: #9356DC;
+    cursor: pointer;
+}
+
+.restaurant-title{
+    font-weight: bold;
+}
+
+footer{
+    background: #353535;
+    padding-top: 2rem;
+    padding-left: 2rem;
+}
+
+footer h2{
+    font-family: 'Shrikhand', cursive;
+    padding-bottom: 1rem;
+    font-size: 20px;
+    color: white;
+    /* italic */
+}
+
+footer ul{
+    list-style: none;
+}
+
+footer a{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: white;
+    text-decoration: none;
+    display:flex;
+    column-gap: 15px;
+    margin-bottom: 0.4rem;
+}
+
+footer .fa-solid{
+    color: white;
+    width: 18px;
+}
