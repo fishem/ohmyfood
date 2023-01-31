@@ -19,6 +19,7 @@ body{
 header{
     display: flex;
     align-items: center;
+    padding-top: 1rem;
     padding-bottom: 1rem;
     width: 100%;
 
@@ -32,10 +33,6 @@ header .h1{
     font-family: 'Shrikhand', cursive;
 }
 
-/* .image{
-    top: -10px;
-    position: relative;
-} */
 
 .image img{
     max-width: 100%;
@@ -89,6 +86,9 @@ main h2{
     row-gap: 1rem;
 }
 
+
+
+
 .card{
     border-radius: 15px;
     overflow: hidden;
@@ -97,8 +97,25 @@ main h2{
     display: flex;
     cursor: pointer;
     column-gap: 5px;
-    justify-content: space-between
+    justify-content: space-between;
+    opacity: 0;
+    animation: fadin 2000ms cubic-bezier(.5,0,.14,1) forwards;
 }
+
+
+.card:nth-child(1){animation-delay: 1000ms;}
+.card:nth-child(2){animation-delay: 1250ms;}
+.card:nth-child(3){animation-delay: 1450ms;}
+
+
+
+@keyframes fadin{
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+
+
 
 .text-menu-description{
     padding: 0.7rem; 
