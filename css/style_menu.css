@@ -25,6 +25,11 @@ header{
 
 }
 
+.href{
+    text-decoration:none;
+    color: black; 
+}
+
 header .fa-solid{
     padding-left: 1rem;
 }

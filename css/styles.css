@@ -1,5 +1,5 @@
 *{
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     box-sizing: border-box;
 }
@@ -28,6 +28,7 @@ header h1{
 
 .location p {
     padding-left: 2rem;
+    margin: 0;
 }
 .block-description{
     padding-top: 2rem;
@@ -59,6 +60,7 @@ header h1{
     border: none;
 }
 
+/* fonctionnement */
 .block-fonctionnement{
     margin-left: 2rem;
     margin-right: 2rem;
@@ -72,61 +74,64 @@ header h1{
 }
 
 .block-boutton{
-    display: flex;
     width: 100%;
-    flex-direction: column;
-    column-gap: 2rem;
-    margin-bottom: 4rem;
+    position: relative;
+    margin-bottom: 2rem;
 }
 
-.block-boutton form{
-    width: inherit;
-}
+.fa-solid.fa-1,
+.fa-solid.fa-2,
+.fa-solid.fa-3{
+    position: absolute;
+    top: 50%;
+    transform: translate( -50%, -50% );
 
-.block-boutton form>i{
     background-color: #9356DC;
     border-radius: 50%;
     color: white;
     font-size: 16px;
+
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 15px;
     padding-right: 15px;
-    position: relative;
-    top: 3.7rem;
-    right: 1rem;
+
 }
 
-.fa,
-.fa-solid {
-    color: grey;
-    font-size: 20px ;
-}
-
-
-form>button{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding: 1.8rem 2rem;
+.block-boutton>button{
+    width: inherit;
+    padding: 1.8rem 0rem;
     background: rgba(247,247,247,255);
     border-radius: 25px 25px 25px 25px;
     border: none;
-    width: inherit;
     box-shadow: 1px 5px  10px rgba(0, 0, 0, 0.10);
+    font-size: 15px;
+    font-weight: bold;
+
+    display: flex;
+    align-items: center;
 }
 
-button>p{
-    padding-left: 1rem;
-    font-weight: 600;
-}
-
-form:hover>button{
+button:hover{
     background-color: rgb(147, 86, 220, 0.2);
     cursor: pointer;
 }
-form:hover>button>i{
+
+button>i{
+    margin-right: 10%;
+    color: grey;
+    font-size: 1.5rem ;
+    margin-left: 15%;
+}
+
+button:hover>i{
     color: #9356DC;
+} 
+
+
+.fa-sharp.fa-solid.fa-location-dot{
+    margin: 0;
+    margin-right: 10px;
 }
 
 
@@ -139,8 +144,6 @@ form:hover>button>i{
 }
 
 .block-restaurant h2{
-    /* margin-left: 2rem;
-    margin-right: 2rem; */
     padding-bottom: 2rem;
 }
 
@@ -149,13 +152,23 @@ form:hover>button>i{
     display: flex;
     flex-direction: column;
 }
+.href{
+    text-decoration:none;
+    color: black; 
+}
 
 .grid-card-restaurants{
     display: flex;
     flex-direction: column;
+
     margin-bottom: 33px;
     margin-top: auto;
-    width: auto;
+
+    position: relative;
+
+    border-radius: 20px;
+    overflow: hidden;
+    
 }
 
 
@@ -166,14 +179,11 @@ form:hover>button>i{
 .tag-nouveau{
     color: #169475;
     background-color: rgba(153,226,208,255);
-    display: flex;
-    width: 6rem;
     padding: 3px;
-    justify-content: center;
-    position: relative;
-    top: 40px;
-    left: 65%;
-    
+    position: absolute;
+    left: 90%;
+    top: 5%;
+    transform: translate( -50%, -50% );
 }
 
 .card-image{
@@ -199,6 +209,7 @@ form:hover>button>i{
     padding-right: 1rem;
     background: white;
     border-radius: 0px 0px 20px 20px;
+    width: 100%;
 }
 
 .container>.fa-regular{
@@ -209,6 +220,19 @@ form:hover>button>i{
 .container> .fa:hover{
     color: #9356DC;
     cursor: pointer;
+
+}
+
+.container>.fa{
+    margin-top: 0.5rem;
+    margin-left: 2rem;
+    margin-right: 0;
+    color: grey;
+    font-size: 20px;
+}
+
+.text{
+    margin: 0;
 }
 
 .restaurant-title{
@@ -247,38 +271,50 @@ footer a{
 footer .fa-solid{
     color: white;
     width: 18px;
+    margin: 0;
 }
 
 /* desktop */
-@media screen and (min-width:600px) and (max-width:1440px) {
+@media screen and (min-width:767px) and (max-width:1700px) {
+
+    .block-boutton>button>i{
+        display: none;
+
+    }
+    .block-boutton>button{
+        justify-content: center;
+    }
 
     .grid {
-        /* display: flex; */
         column-gap: 1rem;
         margin-left: 25px;
         margin-right: 40px;
         margin-right: 60px;
         justify-content: space-between;
         flex-direction: row;
+        flex-wrap: wrap;
       }
 
-      .grid-card-restaurants {
-        display: flex;
-        width: 100%;
-        height: auto;
-        flex-direction: column;
-        background-color: white;
-        border: 5px solid #FFFFFF;
-        border-radius: 20px;
-        box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.10);
-        border-top-width: 0px;
-        border-right-width: 0px;
-        border-left-width: 0px;
+      .tag-nouveau {
+        left: 75%;
+        top: 5%;
+        transform: translate( -50%, -50% );
     }
+
 
     .card-image{
         max-width: 300px;
         height: 300px;
     }
 
+}
+
+/* small device */
+@media screen and (min-width:0px) and (max-width:767px) {
+
+    .tag-nouveau {
+        left: 75%;
+        top: 10%;
+        transform: translate( -50%, -50% );
+    }
 }
