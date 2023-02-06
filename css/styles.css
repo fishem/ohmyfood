@@ -56,7 +56,8 @@ header h1{
     padding: 1rem 2rem;
     color: white;
     font-weight: 400;
-    background-color: #9356DC;
+    box-shadow: 8px 5px  10px rgba(0, 0, 0, 0.20);
+    background: linear-gradient(175deg, rgba(233,114,219,1) 35%, rgba(161,91,220,1) 100%);
     border: none;
 }
 
@@ -96,6 +97,24 @@ header h1{
     padding-left: 15px;
     padding-right: 15px;
 
+}
+
+.number-circle{
+    position: absolute;
+    top: 50%;
+    transform: translate( -50%, -50% );
+
+    background: #9356DC;
+    border-radius: 50%;
+    width: 2.5rem;
+    height: 2.5rem;
+    border: 1px solid  #9356DC;
+    color: white;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
 
 .block-boutton>button{
@@ -217,8 +236,9 @@ button:hover>i{
 
 }
 
-.container> .fa:hover{
+.container> .fa.fa-heart:hover{
     color: #9356DC;
+    /* background: linear-gradient(175deg, rgba(233,114,219,1) 35%, rgba(161,91,220,1) 100%); */
     cursor: pointer;
 
 }
