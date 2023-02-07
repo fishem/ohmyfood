@@ -14,20 +14,20 @@
     </head>
     <body>
         <header>
-            
             <h1>Ohmyfood</h1>
             <form action="get" class="location">
                 <i class="fa-sharp fa-solid fa-location-dot"></i>
                 Paris, Belleville
             </form>
         </header>
-
-        <div class="block-description"> 
+        <section class="block-description"> 
             <h2>Réservez le menu qui vous convient</h2>
             <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
-            <button>Explorer nos restaurants</button>
-        </div>
-        <div class="block-fonctionnement">
+            <form action="#Restaurants-section" method="get">
+                <button>Explorer nos restaurants</button>
+            </form>          
+        </section>
+        <section class="block-fonctionnement">
             <h2>Fonctionnement</h2>
             <div class="block-boutton">
                 <div class="number-circle">1</div>
@@ -41,9 +41,9 @@
                 <div class="number-circle">3</div>
                 <button><i class="fa-solid fa-store"></i>Dégustez au restaurant</button>
             </div>
-        </div>
-        <div class="block-restaurant">
-            <h2>Restaurants</h2>
+        </section>
+        <section class="block-restaurant">
+            <h2 id="Restaurants-section">Restaurants</h2>
             <div class="grid">
                 <a href="La_palette_du_gout.html" class="href">
                     <div class="grid-card-restaurants">
@@ -114,7 +114,7 @@
                 </a>
             </div>
 
-        </div>
+        </section>
         <footer>
             <h2>Ohmyfood</h2>
             <ul>
@@ -125,10 +125,5 @@
               </ul>
 
         </footer>
-
-        
-
-        
-
     </body>
 </html>

@@ -51,7 +51,7 @@ header h1{
     color: #707070;
     text-align: center;
 }
-.block-description> button{
+.block-description>form> button{
     border-radius: 25px 25px 25px 25px;
     padding: 1rem 2rem;
     color: white;
@@ -61,7 +61,7 @@ header h1{
     border: none;
 }
 
-.block-description> button:hover{
+.block-description>form> button:hover{
     opacity: 0.86;
     box-shadow: 0px 6px 9px 0px rgba(0,0,0,.4);
     transition: all 200ms ease-out;
