@@ -322,7 +322,7 @@ button:hover>i{
     display: block;
     background: linear-gradient(#9356DC, #FF79DA);
     color: transparent;
-    background-clip: text;
+    -webkit-background-clip: text;
     animation: smooth 1s ;
     transition: all 100s ease-in;
 }
