@@ -256,9 +256,9 @@ button:hover>i{
     background-color: rgba(153,226,208,255);
     padding: 3px;
     position: absolute;
-    left: 90%;
-    top: 5%;
-    transform: translate( -50%, -50% );
+    height: 2rem;
+    right: 1rem;
+    top: 1rem;
 }
 
 .card-image{
@@ -352,11 +352,11 @@ button:hover>i{
 
 footer{
     background: #353535;
-    padding-top: 2rem;
-    padding-left: 2rem;
+    padding: 2rem;
     position: absolute;
     left: 0;
     right: 0;
+    
 }
 
 footer h2{
