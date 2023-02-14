@@ -15,7 +15,8 @@ body{
     left: 0;
     width: 100vw;
     height: 100vh;
-    background-color:#707070;
+    /* background-color:#707070; */
+    background-color:white;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -24,18 +25,17 @@ body{
 
 }
 
-.loader--hidden{
+/* .loader--hidden{
     opacity:0 ;
-    /* display: none; */
     visibility: hidden;
-}
+} */
 
 .loader::after{
     content: "";
     width: 75px;
     height: 75px;
     border: 15px solid #9356DC;
-    border-top-color: white;
+    border-top-color: rgba(243, 232, 232, 0.532);
     border-radius: 50%;
     animation: loading 0.7s ease infinite;
 }
