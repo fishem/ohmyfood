@@ -129,6 +129,10 @@ main h2{
     width: 80%;
 }
 
+.titre{
+    white-space: nowrap; 
+}
+
 .plat{
     font-weight: 300;
     white-space: nowrap; 
@@ -140,6 +144,10 @@ main h2{
     padding: 0.7rem;
 }
 
+.card:hover >.text-menu-description .titre{
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
 
 .card:hover >.text-menu-description .plat{
     text-overflow: ellipsis;
@@ -222,6 +230,7 @@ footer{
     background: #353535;
     padding-top: 2rem;
     padding-left: 2rem;
+
 }
 
 footer h2{
@@ -253,7 +262,7 @@ footer .fa-solid{
 }
 
 /* desktop */
-@media screen and (min-width:600px) and (max-width:1440px) {
+@media screen and (min-width:782px) {
     nav {display: none;}
 
     .image{ 
@@ -286,8 +295,13 @@ footer .fa-solid{
         height: 100px;
     }
 
+    .titre{
+        white-space: nowrap; 
+    }
+
     .plat{
-        white-space: normal;
+        white-space: nowrap;
+        /* white-space: normal; */
     }
 
     .text-menu-description{
@@ -300,5 +314,20 @@ footer .fa-solid{
         align-items: center;
     }
     
+
+}
+
+
+
+/* Tablette */
+@media screen and (min-width:650px) and (max-width:781px) {
+
+    /* .block-boutton>button>i{
+        display: none;
+    }
+
+    .block-boutton>button{
+        justify-content: center;
+    } */
 
 }

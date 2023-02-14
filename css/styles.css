@@ -6,29 +6,24 @@
 
 body{
     font-family: 'Roboto', sans-serif;
-    /* max-width: 650px;   */
 }
 
+
+/* Loading page */
 .loader{
     position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
+    inset: 0;
+    opacity: 0.99;
+
     height: 100vh;
-    /* background-color:#707070; */
     background-color:white;
     display: flex;
     align-items: center;
     justify-content: center;
-    z-index: 7;
-    transition: opacity 100s, visibility 5s;
-
+    z-index: 1;
+    animation: disapper 200ms 2s; 
+    animation-fill-mode: forwards;
 }
-
-/* .loader--hidden{
-    opacity:0 ;
-    visibility: hidden;
-} */
 
 .loader::after{
     content: "";
@@ -37,15 +32,24 @@ body{
     border: 15px solid #9356DC;
     border-top-color: rgba(243, 232, 232, 0.532);
     border-radius: 50%;
-    animation: loading 0.7s ease infinite;
+    animation: loading .75s ease infinite; 
 }
+
 
 @keyframes loading {
     from{transform: rotate(0turn)}
     to {transform: rotate(1turn)}
 }
 
+@keyframes disapper {
+    to{
+        opacity:0;
+        visibility: hidden;
+    }
+}
 
+
+/* Main content */
 header h1{
     display: flex;
     justify-content: center;
@@ -266,7 +270,6 @@ button:hover>i{
     aspect-ratio: 16/9;
     object-fit: cover;
     height: 100%;
-
 }
 
 
@@ -332,6 +335,9 @@ footer{
     background: #353535;
     padding-top: 2rem;
     padding-left: 2rem;
+    position: absolute;
+    left: 0;
+    right: 0;
 }
 
 footer h2{
@@ -365,11 +371,11 @@ footer .fa-solid{
 /* desktop */
 @media screen and (min-width:782px) {
 
-    *{
+    /* *{
         margin: 0 auto;
         padding: 0;
         box-sizing: border-box;
-    }
+    } */
 
     .block-fonctionnement{
         padding-bottom: 1rem;
