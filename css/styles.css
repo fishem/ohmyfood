@@ -256,7 +256,6 @@ button:hover>i{
     background-color: rgba(153,226,208,255);
     padding: 3px;
     position: absolute;
-    height: 2rem;
     right: 1rem;
     top: 1rem;
 }
@@ -425,11 +424,6 @@ footer .fa-solid{
         flex-wrap: wrap;
       }
 
-      .tag-nouveau {
-        left: 75%;
-        top: 5%;
-        transform: translate( -50%, -50% );
-    }
 
     .card-image{
         max-width: 300px;
