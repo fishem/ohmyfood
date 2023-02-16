@@ -226,6 +226,9 @@ button:hover{
 footer{
     background: #353535;
     padding: 2rem;
+    position: absolute;
+    left: 0;
+    right: 0;
 }
 
 footer h2{
@@ -265,13 +268,14 @@ footer .fa-solid{
         opacity: .2;}
 
 
-    .menu{
-        padding-left:2rem;
-        padding-right: 2rem;
+    main{
+        padding-left:3rem;
+        padding-right: 3rem;
+        margin-right: 3rem;
         border-radius: 0;
         margin-top: 5rem;
-        position: static;
         width: 100%;
+        padding-bottom: 6rem;
     }
 
     .restaurant-name{
@@ -288,6 +292,7 @@ footer .fa-solid{
     .card{
         width: 100%;
         height: 100px;
+        max-width: 40rem;
     }
 
     .titre{
@@ -317,6 +322,14 @@ footer .fa-solid{
         from{transform: rotate(-1turn) ;}
         to{transform: rotate(0deg) ;}
     }
+
+    footer{
+        position: static;
+    }
+
+    .food-menu{
+        margin-bottom: 6rem;
+    }
     
 
 }
@@ -328,10 +341,10 @@ footer .fa-solid{
 
     /* .block-boutton>button>i{
         display: none;
-    }
-
-    .block-boutton>button{
-        justify-content: center;
     } */
+
+    /* .block-boutton>button{
+        justify-content: center;
+    }  */
 
 }
